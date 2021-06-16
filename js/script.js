@@ -17,24 +17,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     }
     for(var key in studente){    
-       output.innerHTML += "<li>"+ studente[key]+ "</li>";
+       output.innerHTML += "<li>"+ key + " : " + studente[key]+ "</li>";
     }
     // PARTE 2
+    var output1 = document.getElementById("output1");
     // Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.  Ricordatevi, è un array, quindi? for.
  
-/*     var studenti=[
+     var studenti=[
 
         {
         nome: 'Alessandro',
         congnome: "Veneziano",
         età : 20
-        }
-
-        {
-        nome: 'Filippo',
-        congnome: "Genovesi",
-        età : 58
-        }
+        },
 
         {
         nome: 'Pippo',
@@ -42,8 +37,14 @@ document.addEventListener("DOMContentLoaded", function() {
         età : 80
         }
 
-    ]
-    console.log(studenti);  */
+    ];
+    console.log(studenti); 
+
+    for( var x =0 ; x < studenti.length; x++){
+        output1.innerHTML+=(studenti[x].nome,studenti[x].congnome);
+    }
+
+
 
     //PARTE 3
     var output2 = document.getElementById("output2");
@@ -68,6 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
     classe.studenti.push(newStudent);
 
     for(var key in newStudent){    
-        output2.innerHTML += "<li>"+ newStudent[key]+ "</li>";
+        output2.innerHTML += "<li>"+ key + " : " +  newStudent[key]+ "</li>";
      }
 })
