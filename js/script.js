@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     // PARTE 2
     // Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.  Ricordatevi, è un array, quindi? for.
-/* 
+ 
     var studenti=[
 
         {
