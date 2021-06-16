@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // PARTE 2
     // Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.  Ricordatevi, è un array, quindi? for.
  
-    var studenti=[
+/*     var studenti=[
 
         {
         nome: 'Alessandro',
@@ -43,10 +43,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     ]
-    console.log(studenti); 
+    console.log(studenti);  */
 
     //PARTE 3
     var output2 = document.getElementById("output2");
+    function firstCaps(a){
+        var result = a[0].toUpperCase()+ a.slice(1);
+        return result
+    }
     //Dare la possibilità all’utente, attraverso 3 prompt() - uno per ciascuna proprietà - di aggiungere UN SOLO oggetto studente inserendo nell’ordine: nome, cognome e età. */
     var classe = {
         Prof:"Ottavio Fogliata" ,
@@ -57,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //attraverso 3 prompt()
 
-    newStudent.name = prompt("inserisci nome");
-    newStudent.surName = prompt("inserisci cognome");
+    newStudent.name =firstCaps(prompt("inserisci nome"));
+    newStudent.surName =firstCaps(prompt("inserisci cognome"));
     newStudent.age = parseInt(prompt("inserisci età"));
 
     classe.studenti.push(newStudent);
