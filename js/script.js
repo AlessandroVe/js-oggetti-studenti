@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     ]
-    console.log(studenti); */
+    console.log(studenti); 
 
     //PARTE 3
     var output2 = document.getElementById("output2");
