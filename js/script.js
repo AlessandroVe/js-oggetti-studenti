@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
         età : 20
 
     }
-    console.log(studente.età);
+    for(var key in studente){    
+        console.log(studente[key]);
+    }
 
 })
